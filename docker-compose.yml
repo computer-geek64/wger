@@ -29,7 +29,7 @@ services:
     depends_on:
       - web
     ports:
-      - "8088:80"
+      - "127.0.0.1:8088:80"
     healthcheck:
       test: service nginx status
       interval: 10s
